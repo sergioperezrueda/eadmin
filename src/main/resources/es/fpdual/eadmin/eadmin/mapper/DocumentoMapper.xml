@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="es.fpdual.eadmin.eadmin.mapper.DocumentoMapper">
+
+	<insert id="insertarDocumento">
+		INSERT INTO Elemento (
+			codigo, 
+			nombre, 
+			fechaCreacion, 
+			esPublico, 
+			estadoDocumento, 
+			fechaUltimaActualizacion, 
+			tipo) 
+		VALUES (
+			#{documento.codigo}, 
+			#{documento.nombre}, 
+			#{documento.fechaCreacion}, 
+			#{documento.publico}, 
+			#{documento.estado.codigo}, 
+			#{documento.fechaUltimaActualizacion}, 
+			1)
+	</insert>
+	
+	<delete id="eliminarDocumento">
+		DELETE FROM ELEMENTO WHERE codigo = #{codigo};
+	</delete>
+	
+	
+	<update id="actualizarDocumento">
+		UPDATE ELEMENTO
+		SET codigo = #{documento.codigo},
+			nombre = #{documento.nombre},
+			fechaCreacion = #{documento.fechaCreacion},
+			esPublico = #{documento.publico},
+			estadoDocumento = #{documento.estado.codigo}, 
+			fechaUltimaActualizacion = #{documento.fechaUltimaActualizacion}, 
+			tipo = 1 
+		WHERE codigo = #{documento.codigo};
+	</update>
+	
+	<select id="consultarDocumento" resultMap=>
+		SELECT * FROM ELEMENTO WHERE codigo = #{codigo};
+	</select>
+</mapper>

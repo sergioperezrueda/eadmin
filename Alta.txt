@@ -1,0 +1,10 @@
+Código: 1, Nombre: Ejemplo1, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ACTIVO
+*************************************************************************
+Código: 2, Nombre: Ejemplo2, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
+*************************************************************************
+Código: 3, Nombre: Ejemplo3, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: true y Estado Documento: ELIMINADO
+*************************************************************************
+Código: 4, Nombre: Ejemplo4, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: ELIMINADO
+*************************************************************************
+Código: 5, Nombre: Ejemplo5, Fecha Creación: Tue Apr 10 13:00:43 CEST 2018, Público: false y Estado Documento: APROBADO
+*************************************************************************
